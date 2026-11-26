@@ -1,0 +1,13 @@
+<form id='f'>
+  <input name='name' placeholder='Your name' required>
+  <input name='email' type='email' placeholder='Email' required>
+  <select name='language'><option>English</option><option>French</option><option>Portuguese</option></select>
+  <button>Send</button>
+</form>
+<script>
+document.getElementById('f').addEventListener('submit', function(e){
+  e.preventDefault();
+  fetch('PASTE_WEB_APP_URL', {method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(e.target))})
+    .then(function(){ alert('Thanks! We will be in touch.'); e.target.reset(); });
+});
+</script>
