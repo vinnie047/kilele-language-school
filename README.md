@@ -1,1 +1,1 @@
-# kilele-langue-school
+# kilele-language-school
