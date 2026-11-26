@@ -7,7 +7,7 @@
 <script>
 document.getElementById('f').addEventListener('submit', function(e){
   e.preventDefault();
-  fetch('PASTE_WEB_APP_URL', {method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(e.target))})
+  fetch('https://script.google.com/macros/s/AKfycbw6F15QTLIX_5NZ4SnAEnCQHDxBqNNsW1tSUQWJLPaeVJzL7Osdh0e53U8tq3mItLT5/exec', {method:'POST', mode:'no-cors', body:new URLSearchParams(new FormData(e.target))})
     .then(function(){ alert('Thanks! We will be in touch.'); e.target.reset(); });
 });
 </script>
